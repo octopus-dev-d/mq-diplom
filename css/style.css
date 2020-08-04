@@ -116,6 +116,57 @@ body {
     font-size: 13px;
 }
 
+/*Стили для верхнего меню*/
+
+.top-news-1 {
+    background-image: url(../img/trend1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 319px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.top-news-2 {
+    background-image: url(../img/trend2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 319px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.top-news-3 {
+    background-image: url(../img/trend3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 319px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.top-news-4 {
+    background-image: url(../img/trend4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 319px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.top-description {
+    border: 3px solid #b59f5b;
+    margin: 0 23px 15px 19px;
+    padding: 37px;
+}
+
+.top-news-block {
+    display: flex;
+}
 
 /*Стили для основного меню*/
 
