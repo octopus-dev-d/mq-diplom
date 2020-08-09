@@ -4,14 +4,18 @@
     font-family: open-sans;
     font-style: normal;
     font-weight: 400;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    src: url(..//fonts/OpenSans-Regular.ttf);
+    src: url(..//fonts/OpenSans-Regular.woff);
+    src: url(..//fonts/OpenSans-Regular.woff2);
 }
 
 @font-face {
     font-family: open-sans;
     font-style: normal;
     font-weight: 700;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    src: url(..//fonts/OpenSans-Bold.ttf);
+    src: url(..//fonts/OpenSans-Bold.woff);
+    src: url(..//fonts/OpenSans-Bold.woff2);
 }
 
 
@@ -118,44 +122,81 @@ body {
 
 /*Стили для верхнего меню*/
 
+.top-news-title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin: 62px 0 27px 0;
+    padding-bottom: 11px;
+}
+
+.top-news-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 66px;
+    height: 2px;
+    background-color: #e1d9bd;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+
 .top-news-1 {
     background-image: url(../img/trend1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 407px;
+    width: 25%;
     height: 319px;
     display: flex;
     align-items: flex-end;
+    margin-right: 3px;
 }
 
 .top-news-2 {
     background-image: url(../img/trend2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 407px;
+    width: 25%;
     height: 319px;
     display: flex;
     align-items: flex-end;
+    margin-right: 3px;
 }
 
 .top-news-3 {
     background-image: url(../img/trend3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 407px;
+    width: 25%;
     height: 319px;
     display: flex;
     align-items: flex-end;
+    margin-right: 3px;
 }
 
 .top-news-4 {
     background-image: url(../img/trend4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 407px;
+    width: 25%;
     height: 319px;
     display: flex;
     align-items: flex-end;
+}
+
+.top-news-header-title-link {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .top-description {
@@ -166,6 +207,7 @@ body {
 
 .top-news-block {
     display: flex;
+    width: 100%;
 }
 
 /*Стили для основного меню*/
