@@ -1092,18 +1092,21 @@ body {
         text-align: center;
     }
     .top-news-block {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .top-news-1, .top-news-2, .top-news-3, .top-news-4 {
         width: 100%;
     }
 
     .main {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .news {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -1117,7 +1120,8 @@ body {
     }
 
     .products-block {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
