@@ -31,6 +31,101 @@ body {
     font-family: open-sans;
 }
 
+/* Стили для фидбека */
+
+.popup {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    top: 270px;
+    left: 680px;
+    display: none;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up {
+    width: 390px;
+}
+
+.sign-up-title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin: 53px 0 27px 0;
+    padding-bottom: 11px;
+    width: 100%;
+}
+
+.sign-up-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 66px;
+    height: 2px;
+    background-color: #e1d9bd;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.sign-up-content {
+    margin: 0 30px 53px;
+}
+
+.sing-up-form select {
+    display: inline-block;
+    width: 328px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    border: none;
+    outline: none;
+}
+
+.sing-up-form input[type="text"] {
+    display: inline-block;
+    width: 328px;
+    padding: 16px 20px 101px;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    border: none;
+    outline: none;
+}
+
+.sign-up-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-group:nth-child(2) {
+    margin-top: 28px;
+    margin-bottom: 18px;
+}
+
+.form-questions:nth-child(1) {
+    margin-bottom: 11px;
+}
+
+.sign-up-button {
+    margin-top: 26px;
+    background-color: #b59f5b;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px 120px;
+}
+
 /*Стили для шапки*/
 
 .header {
@@ -309,6 +404,7 @@ body {
     margin-top: 64px;
     padding: 0 15px;
     display: flex;
+    justify-content: space-between;
 }
 
 .news-block {
@@ -396,7 +492,6 @@ body {
 
 .additional-block {
     width: 22.6%;
-    margin-left: 120px;
 }
 
 .recent-posts {
@@ -698,6 +793,18 @@ body {
     padding-bottom: 11px;
 }
 
+.product {
+    width: 300px;
+}
+
+.product:nth-child(1) {
+    margin-left: 22px;
+}
+
+.product:nth-child(3) {
+    margin-right: 22px;
+}
+
 .product-title::after {
     content: "";
     position: absolute;
@@ -713,20 +820,17 @@ body {
 
 .products-block {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 85%;
-    margin-left: 120px;
-}
-
-.product:nth-child(2) {
-    margin: 0 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 }
 
 .frame {
     width: 344px;
     border: 3px solid #b59f5b;
     height: 275px;
-    margin-right: 22px;
     margin-left: -22px;
     padding-top: 56px;
     padding-left: 21px;
@@ -820,6 +924,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .footer-socials {
@@ -891,6 +996,9 @@ body {
     color: #999999;
     text-decoration: none;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 }
 
 /*Медиа стили для планшета*/
@@ -904,6 +1012,9 @@ body {
         background-color: #000000;
         position: relative;
         width: 100%;
+    }
+    .container {
+        padding: 0;
     }
     .container-text {
         padding: 0 0px 146px;
@@ -923,16 +1034,16 @@ body {
         width: 100%;
     }
     .top-news-1, .top-news-2, .top-news-3, .top-news-4 {
-        width: 49%;
+        width: 49.6%;
     }
     .top-news-3, .top-news-4 {
         margin-top: 3px;
     }
     .main {
-        width: 91%;
+        padding: 0;
     }
     .news-block {
-        width: 51%;
+        width: 56.081%;
     }
     .news {
         display: block;
@@ -941,10 +1052,11 @@ body {
         margin-left: 0;
     }
     .additional-block {
-        width: 35.3%;
+        width: 39.056%;
     }
     .products-block {
         flex-wrap: wrap;
+        padding: 0;
     }
     .product {
         width: 35%;
